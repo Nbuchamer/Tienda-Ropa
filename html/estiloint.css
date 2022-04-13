@@ -1,0 +1,161 @@
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #d4bdae;
+}
+.container{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    text-align: center;
+}
+.header{
+    justify-items: center;
+    grid-area: header;
+}
+.main{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+}
+.footer{
+    justify-content: center;
+    grid-area: footer;
+}
+main{
+    text-align: center;
+}
+.menu {
+    list-style: none;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+ }
+ .menu li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+ }
+ .menu li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 30px;
+ }
+ .menu li a:hover {
+    background-color: beige;
+    color: black;
+    font-style: italic;
+    border-radius: 100%;
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+     display: block;
+     background-color:  #d4bdae;
+ }
+footer{
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.ropita{
+    list-style: none;
+    text-align: center;
+    font-size: 40px;
+}
+.insta{
+    text-align: center;
+    font-size: 25px;
+}
+.section1{
+    width: 400px;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    border: gray 2px double;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+.section2{
+    width: 400px;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    border: gray 2px double;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+fieldset {
+    color: black;
+    width: 400px;
+    margin: 20px;
+    padding: 10px; 
+    border: gray 2px double;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+h1{
+    color: black;
+    font-style: normal;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+h3{
+    color: black;
+    font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.7rem;
+
+}
+.contacto{
+    color: black;
+    width: 30%;
+    margin: 2rem;
+    padding: 2rem; 
+    border: gray 2px double;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+@media screen and (max-width: 768px){
+    .container{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}
